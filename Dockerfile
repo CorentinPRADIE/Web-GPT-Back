@@ -10,7 +10,7 @@ WORKDIR /app
 # Copy the dependencies file to the working directory
 COPY requirements.txt .
 
-RUN sudo apt-get install gcc
+RUN apt-get install gcc
 
 # Install any dependencies
 RUN pip install -r requirements.txt

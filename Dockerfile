@@ -10,6 +10,7 @@ WORKDIR /app
 # Copy the dependencies file to the working directory
 COPY requirements.txt .
 
+RUN apt-get update
 RUN apt-get install gcc
 
 # Install any dependencies

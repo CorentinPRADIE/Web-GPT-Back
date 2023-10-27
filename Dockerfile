@@ -7,6 +7,10 @@ EXPOSE 5000/tcp
 # Set the working directory in the container
 WORKDIR /app
 
+ARG BING_SEARCH_V7_SUBSCRIPTION_KEY=f0fdadbbd5784a46aca726cfcf2a14fe
+
+ARG OPENAI_API_KEY=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
+
 # Copy the dependencies file to the working directory
 COPY requirements.txt .
 
